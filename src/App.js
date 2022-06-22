@@ -3,22 +3,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import UserProfile from "./components/UserProfile";
-import LoLMain from "./components/LoLMain";
-import ApexMain from "./components/LoLMain";
+import Categories from "./components/Categories";
+import Game from "./components/Game";
 import Login from "./components/Login";
-
-// Team should exist in footer probably
-
-// import Team from "./components/Team";
-
-// sections that may be moved to respective components
-// import ApexHeros from './components/ApexHeros';
-// import ApexProfile from "./components/ApexProfile";
-// import ApexLB from "./components/ApexLB";
-// import LoLChamps from "./components/LoLChamps";
-// import LoLPofile from "./components/LoLProfile";
-// import LoLLB from "./components/LoLLB";
-
+import Team from "./components/Team";
 
 function App() {
   const [pages] = useState([
@@ -28,14 +16,9 @@ function App() {
         component: <Home />
     },
     {
-        name: "lolMain",
-        display: "League of Legends",
-        component: <LoLMain />
-    },
-    {
-        name: "apexMain",
-        display: "Apex Legends",
-        component: <ApexMain />
+        name: "categories",
+        display: "Categories",
+        component: <Categories />
     },
     // Log in and Profile should be contingent on where the user is logged in or not
     // if logged out, display log in
@@ -50,6 +33,11 @@ function App() {
       name: "userProfile",
       display: "Profile",
       component: <UserProfile />
+    },
+    {
+        name: "team",
+        display: "Meet The Team",
+        component: <Team />
     }
 ]);
 

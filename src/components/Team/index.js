@@ -1,3 +1,7 @@
 import React, {useState} from "react";
 
-export default 
+const Team = () => {
+
+};
+
+export default Team;

@@ -1,3 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 
-export default 
+const Footer = (props) => {
+    const {
+        pages = [],
+        setCurrentPage,
+        currentPage
+      } = props;
+
+      return (
+        <footer className="">
+            <a href="">GitHub</a>
+        </footer>
+      );
+    };
+
+    export default Footer;

@@ -1,3 +1,12 @@
 import React, {useState} from "react";
 
-export default 
+const Home = () => {
+    <section className="home">
+        <div>
+            
+        </div>
+    </section>
+
+}
+
+export default Home;

@@ -1,3 +1,7 @@
 import React, {useState} from "react";
 
-export default 
+const UserProfile = () => {
+
+}
+
+export default UserProfile;
