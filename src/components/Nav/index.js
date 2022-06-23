@@ -13,9 +13,9 @@ const Nav = (props) => {
         <nav>
             <ul className="">
                 {pages.map((page) => (
-                    <p className={`${page.name===currentPage.name && "navActive"}`} key={page.name} onClick={() => {setCurrentPage(page)}}>
+                    <li className={`${page.name===currentPage.name && "navActive"}`} key={page.name} onClick={() => {setCurrentPage(page)}}>
                         {page.display}
-                    </p>
+                    </li>
                 ))}
             </ul>
         </nav>
