@@ -1,6 +1,9 @@
 import React from "react";
 import Nav from "../Nav";
 import Home from "../Home"
+import Login from "../Login";
+import Logout from "../Logout";
+import UserProfile from "../UserProfile";
 
 const Header = (props) => {
     const {
@@ -27,6 +30,11 @@ const Header = (props) => {
                   name="search"
                   placeholder="Search..."
                 />
+            </div>
+            {/* These 2 Tabs are Login dependant */}
+            <div>
+              <Login />
+              <Logout />
             </div>
         </header>
       )
