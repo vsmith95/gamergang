@@ -2,13 +2,13 @@ import React, {useState} from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import UserProfile from "./components/UserProfile";
 import Categories from "./components/Categories";
 import Game from "./components/Game";
-import Login from "./components/Login";
 import Team from "./components/Team";
-
+import { useAuth0 } from "@auth0/auth0-react"
 const App = () => {
+
+
     const [pages] = useState([
         {
             name: "home",
@@ -26,28 +26,18 @@ const App = () => {
             display: "Categories",
             component: <Categories />
         },
-        // Log in and Profile should be contingent on where the user is logged in or not
-        // if logged out, display log in
-        // if logged in, display profile
-        // we can handle this once we have a logged in state set up
-        {
-            name: "login",
-            display: "Log-in",
-            component: <Login />
-        },
-        {
-            name: "userProfile",
-            display: "Profile",
-            component: <UserProfile />
-        },
         {
             name: "team",
             display: "Meet The Team",
             component: <Team />
-        }
+        },
     ]);
 
     const [currentPage, setCurrentPage] = useState(pages[0]);
+
+    const { isLoading } = useAuth0();
+
+    if (isLoading) return <div>Loading...</div>
 
     return (
         <div>

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+
 import Game from "../Game";
 
 const Categories = () => {
@@ -12,7 +13,6 @@ const Categories = () => {
                 </select> */}
                 <div>
                     {/* active tags */}
-                    <p>Placeholder Text</p>
                 </div>
             </div>
             {/* section for search results, game modals pulled from tags */}

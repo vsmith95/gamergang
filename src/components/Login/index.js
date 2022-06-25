@@ -1,34 +1,17 @@
 import React, {useState} from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Login = () => {
+  const { loginWithRedirect, isAuthenticated } = useAuth0();
 
-    const [errorMessages, setErrorMessages] = useState({});
-    const [isSubmitted, setIsSubmitted] = useState(false);
+  return (
+    !isAuthenticated && (
+      <button onClick={() => loginWithRedirect()}>
+        Login
+      </button>
+    )
+  )
 
-    // Generate JSX code for error message
-    const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-    <div className="error">{errorMessages.message}</div>
-);
-    return (
-    <div className="form">
-      <form>
-        <div className="input-container">
-          <label>Username </label>
-          <input type="text" name="uname" required />
-          {renderErrorMessage("uname")}
-        </div>
-        <div className="input-container">
-          <label>Password </label>
-          <input type="password" name="pass" required />
-          {renderErrorMessage("pass")}
-        </div>
-        <div className="button-container">
-          <input type="submit" />
-        </div>
-      </form>
-    </div>
- );
 }
 
 export default Login;
