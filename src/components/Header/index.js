@@ -1,5 +1,9 @@
 import React from "react";
 import Nav from "../Nav";
+import Home from "../Home"
+import Login from "../Login";
+import Logout from "../Logout";
+import UserProfile from "../UserProfile";
 
 const Header = (props) => {
     const {
@@ -11,7 +15,7 @@ const Header = (props) => {
       return (
         <header className="">
             <h1>
-                <a class="title" href="/">Gamer Thing</a>
+                <a class="title" href={<Home />}>Basement Dwellers</a>
             </h1>
             <Nav
                 pages = {pages}
@@ -19,12 +23,19 @@ const Header = (props) => {
                 currentPage={currentPage}
             />
             {/* Search Bar */}
-            <input
-                className="searchBar"
-                type="text"
-                name="search"
-                placeholder="Search..."
-            />
+            <div>
+                <input
+                  className="searchBar"
+                  type="text"
+                  name="search"
+                  placeholder="Search..."
+                />
+            </div>
+            {/* These 2 Tabs are Login dependant */}
+            <div>
+              <Login />
+              <Logout />
+            </div>
         </header>
       )
     };
