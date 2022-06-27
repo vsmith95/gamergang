@@ -1,0 +1,88 @@
+.body{
+    background-image: url(https://t3.ftcdn.net/jpg/02/58/99/42/360_F_258994216_zu9hTrycqkUa3GMpB58HtcXaiEQfKMs9.jpg);
+    background-size: cover;
+}
+
+.title{
+    background-color: antiquewhite;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 125%;
+}
+.pageButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.navActive{
+    background-color: rgb(250, 199, 132);
+    margin: 0px, 10px;
+}
+.false{
+    background-color: antiquewhite;
+}
+.navActive,.false{
+    border: 2px solid black;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.searchBar{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   }
+.gameTitle{
+    font-size: 200%;
+}
+.gameArt{
+}
+.rating{
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.userScore{
+    border: 1.5px solid black;
+    margin: 0px 10px;
+}
+.criticScore{
+    border: 1.5px solid black;
+    margin: 0px 10px;
+}
+.review{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.gameInfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.gameInfo > div{
+    padding: 20px;
+
+}
+.intro{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.intro2{
+    text-align: center;
+    font-size: 180%;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.githubLink{
+    text-align: center;
+    font-size: 135%;
+}
+.comment{
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125%;
+}

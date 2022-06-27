@@ -11,7 +11,7 @@ const Header = (props) => {
       return (
         <header className="">
             <h1>
-                <a href="/">Gamer Thing</a>
+                <a class="title" href="/">Gamer Thing</a>
             </h1>
             <Nav
                 pages = {pages}
@@ -19,14 +19,12 @@ const Header = (props) => {
                 currentPage={currentPage}
             />
             {/* Search Bar */}
-            <div>
-                <input
-                  className="searchBar"
-                  type="text"
-                  name="search"
-                  placeholder="Search..."
-                />
-            </div>
+            <input
+                className="searchBar"
+                type="text"
+                name="search"
+                placeholder="Search..."
+            />
         </header>
       )
     };

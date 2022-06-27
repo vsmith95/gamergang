@@ -11,7 +11,7 @@ const Nav = (props) => {
 
     return (
         <nav>
-            <ul className="">
+            <ul className="pageButtons">
                 {pages.map((page) => (
                     <li className={`${page.name===currentPage.name && "navActive"}`} key={page.name} onClick={() => {setCurrentPage(page)}}>
                         {page.display}

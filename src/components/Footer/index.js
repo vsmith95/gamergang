@@ -8,7 +8,7 @@ const Footer = (props) => {
       } = props;
 
       return (
-        <footer className="">
+        <footer className="githubLink">
             <a href="">GitHub</a>
         </footer>
       );
