@@ -4,7 +4,7 @@
 }
 
 .title{
-    background-color: antiquewhite;
+    background-image: linear-gradient(silver, antiquewhite);
     font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     padding: 5px;
@@ -21,11 +21,12 @@
     list-style: none;
 }
 .navActive{
+    background-image: linear-gradient(rgb(250, 199, 132), antiquewhite);
     background-color: rgb(250, 199, 132);
     margin: 0px, 10px;
 }
 .false{
-    background-color: antiquewhite;
+    background-image: linear-gradient(silver, antiquewhite);
 }
 .navActive,.false{
     border: 2px solid black;
@@ -51,21 +52,21 @@
     border: 1.5px solid black;
     margin: 0px 10px;
     padding: 5px;
-    background-color: antiquewhite;
+    background-image: linear-gradient(silver, antiquewhite);
     border-radius: 5px;
 }
 .criticScore{
     border: 1.5px solid black;
     margin: 0px 10px;
     padding: 5px;
-    background-color: antiquewhite;
+    background-image: linear-gradient(silver, antiquewhite);
     border-radius: 5px;
 }
 .review{
     text-align: center;
     font-size: larger;
     font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: antiquewhite;
+    background-image: linear-gradient(silver, antiquewhite);
     border: 1.5px solid black;
 }
 .gameInfo{
@@ -95,8 +96,9 @@
 .comment{
     font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 125%;
-    background-color: antiquewhite;
     border: 1.5px solid black;
+    background-image: linear-gradient(silver, antiquewhite);
+
 }
 .teamMembers{
     display: flex;
@@ -105,7 +107,7 @@
 .clinton{
     font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 125%;
-    background-color: antiquewhite;
+    background-image: linear-gradient(silver, antiquewhite);
     border: 1.5px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -114,7 +116,7 @@
 .kevni{
     font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 125%;
-    background-color: antiquewhite;
+    background-image: linear-gradient(silver, antiquewhite);
     border: 1.5px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -123,28 +125,29 @@
 .vaughn{
     font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 125%;
-    background-color: antiquewhite;
+    background-image: linear-gradient(silver, antiquewhite);
     border: 1.5px solid black;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
 }
-.teamPics{
-    display: flex;
-    justify-content: center;
-}
+
 .clintonPic{
     padding: 10px;
     margin: 10px;
     max-width: 250px;
+    margin-top: -10px;
 }
 .kevniPic{
     padding: 10px;
     margin: 10px;
-    max-width: 250px;
+    max-width: 230px;
+    margin-top: -10px;
 }
 .vaughnPic{
     padding: 10px;
     margin: 10px;
     max-width: 250px;
+    margin-top: -10px;
+    margin-left: -10px;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import kevniPic from "../../assets/images/kevnipic.jpg"
 import vaughnPic from "../../assets/images/vaughnpic.png"
+import clintonPic from "../../assets/images/clintonpic.jpg"
 
 const Team = () => {
     return (
@@ -21,6 +22,9 @@ const Team = () => {
                     <div>
                         <p>Mini Bio?</p>
                     </div>
+                    <div>
+                        <img class="clintonPic" src={clintonPic} alt="" />
+                    </div>
                 </div>
 
                 <div class="kevni">
@@ -35,6 +39,9 @@ const Team = () => {
                     </div>
                     <div>
                         <p>Mini Bio?</p>
+                    </div>
+                    <div>
+                        <img class="kevniPic" src={kevniPic} alt="" />
                     </div>
                 </div>
 
@@ -51,17 +58,9 @@ const Team = () => {
                     <div>
                         <p>Mini Bio?</p>
                     </div>
-                </div>
-            </div>
-            <div class="teamPics">
-                <div class="clintonPic">
-                    <img class="kevniPic" src={kevniPic} alt="" />
-                </div>
-                <div>
-                    <img class="kevniPic" src={kevniPic} alt="" />
-                </div>
-                <div class="vaughnPic">
-                    <img class="kevniPic" src={vaughnPic} alt="" />
+                    <div>
+                        <img class="vaughnPic" src={vaughnPic} alt="" />
+                    </div>
                 </div>
             </div>
         </section>
