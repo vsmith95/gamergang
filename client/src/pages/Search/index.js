@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import axios from "axios";
+const axios = require("axios");
 
 // this is basically just a search result page for everything
 const api = axios.create({
