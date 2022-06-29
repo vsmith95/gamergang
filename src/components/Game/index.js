@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Categories from "../Categories";
+import Categories from "../Search";
 import GameProp from "../GameProp";
 
 // this will be the page for displaying a game once it is selected

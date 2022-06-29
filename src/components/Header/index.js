@@ -3,7 +3,6 @@ import Nav from "../Nav";
 import Home from "../Home"
 import Login from "../Login";
 import Logout from "../Logout";
-import UserProfile from "../UserProfile";
 
 const Header = (props) => {
     const {
@@ -23,14 +22,14 @@ const Header = (props) => {
                 currentPage={currentPage}
             />
             {/* Search Bar */}
-            <div>
+            {/* <div>
                 <input
                   className="searchBar"
                   type="text"
                   name="search"
                   placeholder="Search..."
                 />
-            </div>
+            </div> */}
             {/* These 2 Tabs are Login dependant */}
             <div>
               <Login />

@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import JSONpretty from "react-json-pretty"
 
 const UserProfile = () => {
-    const { user, isAuthenticated } = useAuth0();
+    const { isAuthenticated } = useAuth0();
 
     return (
         isAuthenticated && (

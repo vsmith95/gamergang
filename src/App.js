@@ -2,12 +2,14 @@ import React, {useState} from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Categories from "./components/Categories";
+import Search from "./components/Search";
 import Game from "./components/Game";
 import Team from "./components/Team";
 import { useAuth0 } from "@auth0/auth0-react"
-const App = () => {
+import axios from "axios";
 
+
+const App = () => {
 
     const [pages] = useState([
         {
@@ -22,9 +24,9 @@ const App = () => {
             component: <Game />
         },
         {
-            name: "categories",
-            display: "Categories",
-            component: <Categories />
+            name: "search",
+            display: "Search",
+            component: <Search />
         },
         {
             name: "team",

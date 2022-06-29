@@ -17,7 +17,7 @@ const Team = () => {
                         <img src="" alt="" />
                     </div>
                     <div>
-                        <p>Role on Team</p>
+                        <p>API Integration</p>
                     </div>
                     <div>
                         <p>Mini Bio?</p>
@@ -35,7 +35,7 @@ const Team = () => {
                         <img src="" alt="" />
                     </div>
                     <div>
-                        <p>Role on Team</p>
+                        <p>CSS Styling</p>
                     </div>
                     <div>
                         <p>Mini Bio?</p>
@@ -53,7 +53,7 @@ const Team = () => {
                         <img src="" alt="" />
                     </div>
                     <div>
-                        <p>Role on Team</p>
+                        <p>React Scaffolding/Authorization Integration</p>
                     </div>
                     <div>
                         <p>Mini Bio?</p>
