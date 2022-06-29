@@ -7,6 +7,9 @@ const Home = () => {
         <div>
             <h1 class="intro">Welcome to the Basement</h1>
             <h1 class="intro2">Reccomended Games</h1>
+            <div className="teamMembers">
+                <p>placeholder</p>
+            </div>
             <>
                 <UserProfile />
             </>
