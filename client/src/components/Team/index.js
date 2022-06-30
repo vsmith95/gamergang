@@ -14,13 +14,7 @@ const Team = () => {
                         <h3>Clinton "Otafu" Tarzia</h3>
                     </div>
                     <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <p>Role on Team</p>
-                    </div>
-                    <div>
-                        <p>Mini Bio?</p>
+                        <p>Backend API Integration/Server Setup</p>
                     </div>
                     <div>
                         <img class="clintonPic" src={clintonPic} alt="" />
@@ -32,13 +26,7 @@ const Team = () => {
                         <h3>Kevni "Koney" Kica</h3>
                     </div>
                     <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <p>Role on Team</p>
-                    </div>
-                    <div>
-                        <p>Mini Bio?</p>
+                        <p>Frontend CSS Styling</p>
                     </div>
                     <div>
                         <img class="kevniPic" src={kevniPic} alt="" />
@@ -50,13 +38,7 @@ const Team = () => {
                         <h3>Vaughn "Veez" Smith</h3>
                     </div>
                     <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <p></p>
-                    </div>
-                    <div>
-                        <p>Mini Bio?</p>
+                        <p>Frontend React/Login/Bug Fixing/Deployment</p>
                     </div>
                     <div>
                         <img class="vaughnPic" src={vaughnPic} alt="" />

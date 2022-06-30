@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import api from "../../api";
-import Game from "../Game";
 
 const Search = () => {
   const [name, setName] = useState("");

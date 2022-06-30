@@ -1,12 +1,6 @@
 import React from "react";
 
-const Footer = (props) => {
-    const {
-        pages = [],
-        setCurrentPage,
-        currentPage
-      } = props;
-
+const Footer = () => {
       return (
         <footer className="githubLink">
             <a href="">GitHub</a>
