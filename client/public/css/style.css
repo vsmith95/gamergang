@@ -151,3 +151,54 @@
     margin-top: -10px;
     margin-left: -10px;
 }
+
+.genreButtonArea{
+    display:flex;
+}
+
+.genreButtons{
+    background-image: linear-gradient(silver, antiquewhite);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 5px;
+    border: solid 2px black;
+}
+
+.logOut{
+    background-image: linear-gradient(silver, antiquewhite);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 5px;
+    border: solid 2px black;
+}
+
+.generatedGames{
+    background-image: linear-gradient(silver, antiquewhite);
+    margin: 5px;
+    padding: 20px;
+    max-width: 150px;
+    align-content: center;
+    display:flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.categoryGames{
+
+}
+
+.search-result{
+    background-image: linear-gradient(silver, antiquewhite);
+    margin: 5px;
+    padding: 20px;
+    max-width: 150px;
+    align-content: center;
+    display:flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

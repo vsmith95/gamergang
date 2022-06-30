@@ -34,7 +34,7 @@ const Search = () => {
             return (
               <div className="search-result" key={idx}>
                 - {d.name} ( {Number(d.rating || 0).toFixed(2)}) <br />
-                <img src={"https://" + d.cover_photo.url} />
+                <img class = "coverPic" src={"https://" + d.cover_photo.url} />
               </div>
             );
           })}
