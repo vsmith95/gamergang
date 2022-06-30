@@ -3,8 +3,6 @@ import Nav from "../Nav";
 import Home from "../Home";
 import Login from "../Login";
 import Logout from "../Logout";
-import UserProfile from "../UserProfile";
-import Search from "../Search";
 
 const Header = (props) => {
   const { pages = [], setCurrentPage, currentPage } = props;
