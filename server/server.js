@@ -3,6 +3,7 @@ const express = require("express");
 const axios = require("axios");
 const app = express();
 var cors = require("cors");
+const mongoose = require("mongoose");
 
 const instance = axios.create({
   baseURL: "https://api.igdb.com/v4",
