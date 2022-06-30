@@ -1,34 +1,17 @@
-import React, {useState} from "react";
-import axios from "axios";
-
+import React, { useState } from "react";
+import api from "../../api";
 import Game from "../Game";
 
-const api = axios.create({
-    baseURL: "http://localhost:3002",
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Content-type": "application/json",
-    },
-  });
-
 const Search = () => {
-        const [name, setName] = useState("");
+  const [name, setName] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-
-  const Categories = [
-    { name: "Shooter" },
-    { name: "Puzzles" },
-    { name: "Platformers" },
-    { name: "Adventure" },
-    { name: "RPG" },
-  ];
 
   const submitHandler = () => {
     api.get("/games?search=" + name).then((response) => {
       console.debug(response.data);
       setSearchResults(response.data);
     });
-  }
+  };
 
   const handleInput = (event) => {
     setName(event.target.value);
@@ -57,7 +40,7 @@ const Search = () => {
           })}
         </div>
       </div>
-
+      {/* 
       <div className="flex-container">
         {Categories.map((category) => {
           return (
@@ -67,10 +50,9 @@ const Search = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </section>
-  )
-
-}
+  );
+};
 
 export default Search;
