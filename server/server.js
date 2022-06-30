@@ -21,20 +21,37 @@ app.use("/games", (req, res) => {
   if (req.query.search) {
     searchQuery = `search "${req.query.search}%"`;
   }
+  if (req.query.genres) {
+    searchQuery =
+      searchQuery === ""
+        ? `where genres = ${req.query.genres}`
+        : `${searchQuery}; where genres = (${req.query.genres})`;
+  }
+
   return instance({
     url: "/games",
     method: "POST",
-    data: `fields name,rating,cover; ${searchQuery}; limit 5;`,
+    data: `fields name,rating,cover,genres; ${searchQuery}; limit 5;`,
   })
     .then(async (response) => {
       const newResponse = [];
 
       for (const result of response.data) {
-        const cover_photo = await instance({
-          url: "/covers",
-          method: "POST",
-          data: `fields *; where id = '${result.cover}'; limit 1;`,
-        });
+        let cover_photo = {
+          data: [
+            {
+              url: "//via.placeholder.com/90/FF0000/FFFFFF?Text=image here",
+            },
+          ],
+        };
+
+        if (result.cover) {
+          cover_photo = await instance({
+            url: "/covers",
+            method: "POST",
+            data: `fields *; where id = '${result.cover}'; limit 1;`,
+          });
+        }
 
         const [firstCoverPhoto] = cover_photo.data;
         newResponse.push({ ...result, cover_photo: firstCoverPhoto });
