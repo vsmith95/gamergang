@@ -3,6 +3,7 @@ import placeHolderArt from "../../assets/images/Lostark_Placeholder_Art.jpg"
 import placeHolderGraph from "../../assets/images/lostark_placeholder_graph.JPG"
 
 // this will be the page for displaying a game once it is selected
+// !REMOVE ALL PLACEHOLDER BEFORE API IMPLEMENTATION PLEASE
 
 const Game = () => {
     return (
