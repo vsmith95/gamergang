@@ -53,7 +53,7 @@ const Team = () => {
                         <img src="" alt="" />
                     </div>
                     <div>
-                        <p>Role on Team</p>
+                        <p></p>
                     </div>
                     <div>
                         <p>Mini Bio?</p>
