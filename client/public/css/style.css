@@ -1,0 +1,153 @@
+.body{
+    background-image: url(https://t3.ftcdn.net/jpg/02/58/99/42/360_F_258994216_zu9hTrycqkUa3GMpB58HtcXaiEQfKMs9.jpg);
+    background-size: cover;
+}
+
+.title{
+    background-image: linear-gradient(silver, antiquewhite);
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 125%;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    color: black;
+}
+.pageButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.navActive{
+    background-image: linear-gradient(rgb(250, 199, 132), antiquewhite);
+    background-color: rgb(250, 199, 132);
+    margin: 0px, 10px;
+}
+.false{
+    background-image: linear-gradient(silver, antiquewhite);
+}
+.navActive,.false{
+    border: 2px solid black;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.searchBar{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   }
+.gameTitle{
+    font-size: 200%;
+}
+.rating{
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.userScore{
+    border: 1.5px solid black;
+    margin: 0px 10px;
+    padding: 5px;
+    background-image: linear-gradient(silver, antiquewhite);
+    border-radius: 5px;
+}
+.criticScore{
+    border: 1.5px solid black;
+    margin: 0px 10px;
+    padding: 5px;
+    background-image: linear-gradient(silver, antiquewhite);
+    border-radius: 5px;
+}
+.review{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(silver, antiquewhite);
+    border: 1.5px solid black;
+}
+.gameInfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.gameInfo > div{
+    padding: 20px;
+
+}
+.intro{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.intro2{
+    text-align: center;
+    font-size: 180%;
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.githubLink{
+    text-align: center;
+    font-size: 135%;
+    color:black;
+}
+.comment{
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125%;
+    border: 1.5px solid black;
+    background-image: linear-gradient(silver, antiquewhite);
+
+}
+.teamMembers{
+    display: flex;
+    justify-content: center;
+}
+.clinton{
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125%;
+    background-image: linear-gradient(silver, antiquewhite);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.kevni{
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125%;
+    background-image: linear-gradient(silver, antiquewhite);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.vaughn{
+    font-family: 'Play', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125%;
+    background-image: linear-gradient(silver, antiquewhite);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.clintonPic{
+    padding: 10px;
+    margin: 10px;
+    max-width: 250px;
+    margin-top: -10px;
+}
+.kevniPic{
+    padding: 10px;
+    margin: 10px;
+    max-width: 230px;
+    margin-top: -10px;
+}
+.vaughnPic{
+    padding: 10px;
+    margin: 10px;
+    max-width: 250px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
