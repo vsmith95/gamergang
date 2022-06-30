@@ -4,6 +4,7 @@ import Search from "../Search";
 
 const Browse = () => {
   const Genres = [
+    
     {
       id: 4,
       name: "Fighting",
@@ -46,15 +47,15 @@ const Browse = () => {
   return (
     <section className="browse">
       <Search />
-      <div>
+      <div class = "genreButtonArea">
         {Genres.map((genre, index) => {
           return (
             <div key={index}>
-              <button onClick={clickHandler.bind(genre)}>{genre.name}</button>
-              <div>
+              <button class = "genreButtons" onClick={clickHandler.bind(genre)}>{genre.name}</button>
+              <div class = "categoryGames">
                 {searchResults[genre.id].map((searchResult, i) => {
                   return (
-                    <div key={i}>
+                    <div class = "generatedGames" key={i}>
                       - {searchResult.name} <br />
                       <img src={"https://" + searchResult.cover_photo.url} />
                     </div>
