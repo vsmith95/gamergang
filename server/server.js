@@ -16,6 +16,20 @@ const instance = axios.create({
 
 app.use(cors());
 
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('client/build'));
+}
+
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
+});
+
+app.use("/", (req, res) =>
+  res.json({
+    message: "welcome homes",
+  })
+);
+
 app.use("/games", (req, res) => {
   let searchQuery = "";
   if (req.query.search) {
@@ -87,12 +101,6 @@ app.use("/age-ratings", (req, res) => {
     data: "fields *; limit 5;",
   }).then((response) => res.json(response.data));
 });
-
-app.use("/", (req, res) =>
-  res.json({
-    message: "welcome homes",
-  })
-);
 
 const port = process.env.PORT || 3002;
 app.listen(port, () => console.log("Example app listening on port " + port));
